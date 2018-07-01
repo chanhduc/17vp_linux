@@ -100,8 +100,36 @@ ls [!r]*
 ls *[!s]
 ```
 ### Câu 3
+Giả sử file 1752001.sh
+Dưới đây là script gợi ý
+```shell
+#!/bin/bash
 
+#Yeu cau 1
+echo "Nhap vao so nguyen tu 1 den 10"
+read a
+while (( $a<0 && $a>10 ));do
+    echo "So nhap vao khong hop le. Moi nhap lai"
+    read a
+done
+
+#Yeu cau 2
+for (( i=$a;i>=0;i=i-1)); do
+    echo -n "$i - "
+    case $i in
+        0)  echo Zero ;;
+        1)  echo Mot ;;
+        2)  echo Hai ;;
+        3)  echo Ba ;;
+        4)  echo Bon ;;
+        5)  echo Nam ;;
+        6)  echo Sau ;;
+        7)  echo Bay ;;
+        8)  echo Tam ;;
+        9)  echo Chin ;;
+        10) echo Muoi ;;
+        
+done
+```
 ## Đề 2
-### Câu 1
-### Câu 2
-### Câu 3
+Tham khảo Đề 1
